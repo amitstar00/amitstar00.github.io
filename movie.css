@@ -1,0 +1,170 @@
+html body{
+	margin: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: #EAEDED  ;
+
+}
+
+.input{
+	font-size: 1rem;
+	line-height: 1.5;
+	border-radius: .25rem;
+	border: 1px solid #ced4da;
+	box-sizing: border-box;
+	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.container{
+	margin-top: 4vh;
+	background-color: lightblue;
+	box-shadow: 2px 3px 10px 1px #888888;
+}
+.row{
+	margin: 4%;
+}
+
+.size{
+	text-align: center;
+    
+    vertical-align: middle;
+    
+    user-select: none;
+    border: 1px solid transparent;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    border-radius: .35rem;
+    
+	width: 100%;
+
+
+	
+}
+.btn{
+	margin-bottom: 2vh;
+}
+form{
+	padding-left: 10vw;
+}
+.btns{
+	display: inline-block;
+    font-weight: 0;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+	
+
+.navbar-brand{
+	padding-left: 4vw;
+}
+.nav-item{
+	padding-left: 4vw;
+	padding-right: 4vw;
+}
+
+.card{
+	
+	margin-top: 10vh;
+	margin-left: 8%;
+	margin-right: 8%;
+	margin-bottom: 2vh;
+	border-radius: .25rem;
+
+
+}
+.color{
+	background-color: #5A88A0 ;
+}
+
+.group-item1{
+	position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: .75rem 1.25rem;
+    margin-bottom: -1px;
+    background-color: #5A88A0 ;
+    border: 1px solid rgba(0,0,0,.125);
+}
+.group-item{
+	color: white;
+	position: relative;
+    display: block;
+    padding: .75rem 1.25rem;
+    margin-bottom: -1px;
+    background-color: #5A88A0 ;
+    border: 1px solid rgba(0,0,0,.125);
+}
+.mar{
+	margin-top: 0px;
+	margin-bottom: 0px;
+
+}
+#address{
+	color: white;
+	text-decoration: none;
+
+}
+.image{
+
+	  border-radius: 4%;
+	  box-shadow: 2px 3px 10px 1px #888888;
+}
+
+@media screen and (min-width: 220px) and (max-width: 500px){
+	
+           
+}
+
+
+
+
+@media screen and (min-width: 993px) and (max-width: 1242px){
+	.last{
+		padding-right: 0px;
+	
+
+
+	}
+	form {
+		padding-left: 1vw;
+	}
+}
+@media screen and (max-width: 990px){
+	.navbar{
+		text-align: center;
+
+	}
+	.nav-item:hover{
+		background-color: lightblue;
+	}
+	form{
+		padding-right: 10vw;
+	}
+	.input{
+		
+		width: 100%;
+	}
+	.btns{
+		margin: 44%;
+	}
+}
+@media screen and (min-width: 100px) and (max-width: 575px){
+	html body{
+		overflow-x: hidden;
+	}
+	.images{
+		margin-left: 4vw;
+		margin-right: 4vw;
+		
+	}
+
+}

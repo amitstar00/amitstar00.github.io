@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+                                           <!--Meta tags-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Imdb</title>
+                                           <!-- links for style sheets & Bootstrap4 cdn link-->
+    <link rel="stylesheet" href="movie.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+</head>
+
+       <body>
+                           <!-- navigation Bar -->    
+              <nav class="navbar  navbar-expand-lg navbar-light bg-light">
+              <div class="container-fluid">
+               <a class="navbar-brand" href="index.html">MoviePedia</a>
+                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                
+               <div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav space">
+                <li class="nav-item active">
+                 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="https://www.bollywoodnews.org/">Bollywood News <span class="sr-only"></span></a>
+               </li>
+               <li class="nav-item last">
+                 <a class="nav-link" href="www.hollywoodnews.com/">Hollywood News <span class="sr-only"></span></a>
+               </li>
+               </ul>
+               
+                <form class="form-inline my-2 my-lg-0">
+                   <input class="input mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                   <button class="btns btn-outline-success my-2 " type="submit">Search</button>
+                </form>
+               
+             
+             </div>
+             
+             
+          </nav>
+         
+  
+             <!--      Searching Pannel -->
+              <div class=" container container-fluid">
+                  <h2>Movie Ratings</h2>
+                  <h3>Find  imdb movie's ratings here</h3>
+                  <div class="row">
+                  <div class="col-md-4 col-sm-12 ">
+                   <div class="input-group mb-3">
+                       <div class="input-group-prepend">
+                       
+                       </div>
+
+                          <input type="text " class="size first " placeholder="Movie Title" aria-label="Username"  data-placement="top" data-content="Please Enter Movie title" >
+                   </div>
+                   </div>
+                   <div class="col-md-4 col-sm-12 ">
+                  <div class="input-group main mb-3">
+                       <div class="input-group-prepend">
+                       
+                       </div>
+                          <input type="text" class=" year size" placeholder="Year" aria-label="#" >
+                   </div>
+                   </div>
+                   <div class="col-md-4 col-sm-12">
+                   <div class="input-group mb-3">
+                       <div class="input-group-prepend">
+                      
+                       </div>
+                          <input type="text" class=" id size" placeholder="Id" aria-label="#" >
+                   </div>
+                   </div>
+                   </div>
+                       <p class="lead text-center">
+                          <a class="btn btn-success btn-lg" href="#" role="button" id="searchBtn" >Search</a>
+                        </p>
+              </div>
+
+                                                   <!-- Card to diplay movie related Info                        -->
+
+                     <div class="card" >
+                          <ul class="list-group  list-group-flush">
+                             <li class="group-item1 " ><span  class="poster"></span></li>
+                             <li class="group-item color"><div class="row mar"><div class="col-5 col-sm-4"> Title</div><div class="col-1 col-sm-1">:</div><span class="col-5 col-sm-7 title"></span></li>
+                             <li class="group-item"><div class="row mar"><div class="col-5 col-sm-4"> Year</div><div class="col-1 col-sm-1">:</div> <span class="col-5 col-sm-7 year"></span></li>
+                             <li class="group-item"><div class="row mar"><div class="col-5 col-sm-4"> Plots</div><div class="col-1 col-sm-1">:</div> <span class="col-5 col-sm-7  plot"></span></li>
+                             <li class="group-item"><div class="row mar"><div class="col-5 col-sm-4"> Imdb ID</div><div class="col-1 col-sm-1">:</div> <span class="col-5 col-sm-7 id"></span></li>
+                             <li class="group-item"><div class="row mar"><div class="col-5 col-sm-4"> Imdb Rating</div><div class="col-1 col-sm-1">:</div> <span class="col-5 col-sm-7  rated"></span></li>
+
+                             <li class="group-item"><div class="row mar"><div class="col-5 col-sm-4"> Released Date</div><div class="col-1 col-sm-1">:</div> <span class="col-5 col-sm-7 date"></span></li>
+                             <li class="group-item"><div class="row mar"><div class="col-5 col-sm-4"> Duration</div><div class="col-1 col-sm-1">:</div> <span class="col-5 col-sm-7  duration"></span></li>
+                             <li class="group-item"><div class="row mar"><div class="col-5 col-sm-4"> Language</div><div class="col-1 col-sm-1">:</div> <span class="col-5 col-sm-7 lang"></span></li>
+                             <li class="group-item"><div class="row mar"><div class="col-5 col-sm-4"> Genres</div><div class="col-1 col-sm-1">:</div> <span class="col-5 col-sm-7 genres"></span></li>
+                             <li class="group-item"><div class="row mar"><div class="col-5 col-sm-4"> Actors</div><div class="col-1 col-sm-1">:</div> <span class="col-5 col-sm-7 actor"></span></li>
+                             <li class="group-item"><div class="row mar"><div class="col-5 col-sm-4"> Director </div><div class="col-1 col-sm-1">:</div> <span class="col-5 col-sm-7  director"></span></li>
+                             <li class="group-item"><div class="row mar"><div class="col-5 col-sm-4"> Writer</div><div class="col-1 col-sm-1">:</div> <span class="col-5 col-sm-7 writer"></span></li>
+                             <li class="group-item"><div class="row mar"><div class="col-5 col-sm-4"> Votings</div><div class="col-1 col-sm-1">:</div> <span class="col-5 col-sm-7  voting"></span></li>
+                             <li class="group-item"><div class="row mar"><div class="col-5 col-sm-4"> BoxOffice collections</div><div class="col-1 col-sm-1">:</div> <span class="col-5 col-sm-7 collections"></span></li>
+                             <li class="group-item"><div class="row mar"><div class="col-5 col-sm-4"> Productions</div><div class="col-1 col-sm-1">:</div> <span class="col-5 col-sm-7 production"></span></li>
+                             <li class="group-item"><div class="row mar"><div class="col-5 col-sm-4"> Metascore</div><div class="col-1 col-sm-1">:</div> <span class="col-5 col-sm-7  meta"></span></li>
+                             <li class="group-item"><div class="row mar"><div class="col-5 col-sm-4"> Country</div><div class="col-1 col-sm-1">:</div> <span class="col-5 col-sm-7  country"></span></li>
+                             <li class="group-item"><div class="row mar"><div class="col-5 col-sm-4"> Awards</div><div class="col-1 col-sm-1">:</div> <span class="col-5 col-sm-7  award"></span></li>
+
+                             <li class="group-item"><div class="row mar"><div class="col-5 col-sm-4"> Websites</div><div class="col-1 col-sm-1">:</div><a id="address" href="http://marvel.com/avengers_movie"><span class="col-5  col-sm-7  website" ></span></a></li>
+                          </ul>
+                      </div>
+
+
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+                               <!--jQuery links and javascript cdn links-->
+
+                       <script src="jquery-3.3.1.min.js"></script>
+                       <script type="text/javascript" src="movie.js"></script>
+                       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+
+                       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+                       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+       </body>
+</html>
